@@ -1,7 +1,21 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { Component } from 'react';
 
+
+class B extends React.Component{
+  constructor(props)
+  {
+      super(props);
+      this.state={stateChange:"Minh"};
+      
+  }
+  render(){
+    return this.state.stateChange;
+  }
+}
 function App() {
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -22,4 +36,4 @@ function App() {
   );
 }
 
-export default App;
+export default B;
